@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\laysh\Documents\_projetos\Workspaces\workspace-eclipse\Learning_JAVA\curso-java-completo-udemy\.metadata\.plugins\org.eclipse.jdt.core
+3883950653.index
+3537603865.index
