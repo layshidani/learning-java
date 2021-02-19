@@ -16,7 +16,7 @@ public class Reservation {
 
 	public Reservation(Integer roomNumber, Date checkIn, Date checkOut) throws DomainException {
 		
-		this.validateDate(checkIn, checkOut);
+		this.validateDates(checkIn, checkOut);
 		
 		this.roomNumber = roomNumber;
 		this.checkIn = checkIn;
@@ -49,13 +49,13 @@ public class Reservation {
 
 	public void updateDates(Date checkIn, Date checkOut) throws DomainException {
 				
-		this.validateDate(checkIn, checkOut);
+		this.validateDates(checkIn, checkOut);
 		
 		this.checkIn = checkIn;
 		this.checkOut = checkOut;
 	}
 	
-	public void validateDate(Date checkIn, Date checkOut) throws DomainException {
+	public void validateDates(Date checkIn, Date checkOut) throws DomainException {
 		Date now = new Date();
 
 		if (checkIn.before(now) || checkOut.before(now)) {
